@@ -23,6 +23,22 @@ const translations = {
     labelX: "REDES SOCIAIS", xKicker: "ACOMPANHE AS PUBLICAÇÕES", xTitle: "Codina no <em>X.</em>", xDescription: "Veja as publicações recentes da conta e acompanhe as novidades fora do site.",
     openX: "Abrir @Codin_ai", timelineLabel: "PUBLICAÇÕES RECENTES", timelineFallback: "Publicações de @Codin_ai", timelineHelp: "Se as publicações não aparecerem, abra o perfil diretamente no X.",
     footerText: "Uma história original. Um universo em expansão.", footerTop: "Voltar ao início ↑"
+    castTitle: "Conheça os personagens.",
+    castKicker: "ELENCO DA HISTÓRIA",
+    castDescription: "Conheça as pessoas que fazem parte deste universo.",
+    profileButton: "Ver perfil",
+    closeProfile: "Fechar",
+    profileFullName: "Nome completo",
+    profileAge: "Idade",
+    profileBirthday: "Aniversário",
+    profileGender: "Gênero",
+    profileBloodType: "Tipo sanguíneo",
+    profileHeight: "Altura",
+    profileRole: "Papel na história",
+    profilePersonality: "Personalidade",
+    profileLikes: "Gostos",
+    profileDislikes: "Desgostos",
+    profileDescription: "Sobre o personagem"
   },
   jp: {
     brandSub: "公式ストーリーサイト", navStory: "物語", navCharacter: "キャラクター", navWorld: "世界観", navNews: "お知らせ", navX: "投稿",

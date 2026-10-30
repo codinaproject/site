@@ -886,118 +886,175 @@ img {
     transition-duration: .01ms !important;
   }
 }
-/* Imagem principal responsiva */
+
+/* =================================
+   HERO — IMAGEM DE FUNDO DA CODINA
+================================= */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: min(790px, calc(100svh - 72px));
+  overflow: hidden;
+  isolation: isolate;
+  background: #08060c;
+}
+
+/* Remove os círculos decorativos antigos */
+.hero::before,
+.hero::after {
+  content: none;
+}
+
+/* Imagem ocupando todo o fundo */
 .hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   width: 100%;
-  min-width: 0;
+  height: 100%;
   min-height: 0;
-  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
   overflow: hidden;
+  pointer-events: none;
+  animation: none;
 }
 
 .hero-art img {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+  max-height: none;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
+  filter: none;
 }
 
-/* Ajustes para telas pequenas */
-@media (max-width: 768px) {
-  .hero-art {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero-art img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
-}
-/* Neblina cinematográfica sobre a imagem */
-.hero-art {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.hero-art img {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Neblina cinematográfica intensa */
-.hero-art {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.hero-art img {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-}
-
-/* Primeira camada: névoa violeta */
+/* Degradê preto: mais forte à esquerda,
+   transparente gradualmente à direita */
 .hero-art::before {
   content: "";
   position: absolute;
-  inset: -25px;
+  inset: 0;
   z-index: 2;
   pointer-events: none;
-
-  background:
-    radial-gradient(
-      ellipse at 15% 90%,
-      rgba(145, 65, 255, 0.75),
-      transparent 48%
-    ),
-    radial-gradient(
-      ellipse at 85% 85%,
-      rgba(190, 110, 255, 0.65),
-      transparent 45%
-    ),
-    radial-gradient(
-      ellipse at 50% 100%,
-      rgba(105, 35, 210, 0.8),
-      transparent 55%
-    );
-
-  filter: blur(28px);
-  mix-blend-mode: screen;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 6, 12, 1) 0%,
+    rgba(8, 6, 12, .96) 23%,
+    rgba(8, 6, 12, .78) 42%,
+    rgba(8, 6, 12, .35) 62%,
+    rgba(8, 6, 12, .04) 82%,
+    transparent 100%
+  );
 }
 
-/* Segunda camada: fumaça luminosa */
+/* Neblina violeta apenas nas extremidades */
 .hero-art::after {
   content: "";
   position: absolute;
-  inset: -20px;
+  inset: 0;
   z-index: 3;
   pointer-events: none;
-
   background:
-    linear-gradient(
-      125deg,
-      transparent 15%,
-      rgba(190, 145, 255, 0.28) 45%,
-      transparent 70%
+    radial-gradient(
+      ellipse at 88% 8%,
+      rgba(166, 108, 255, .24),
+      transparent 27%
     ),
     radial-gradient(
-      ellipse at 35% 65%,
-      rgba(155, 95, 255, 0.4),
-      transparent 60%
+      ellipse at 100% 88%,
+      rgba(166, 108, 255, .30),
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 58% 100%,
+      rgba(130, 65, 210, .22),
+      transparent 28%
     );
+  filter: blur(24px);
+}
 
-  filter: blur(20px);
-  mix-blend-mode: screen;
+/* Texto sempre na frente */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 620px;
+  animation: hero-enter .85s ease both;
+}
+
+/* Esconde a legenda sobre a imagem */
+.hero-art-label {
+  display: none;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero-art img {
+    object-position: 68% center;
+  }
+
+  .hero-art::before {
+    background: linear-gradient(
+      90deg,
+      rgba(8, 6, 12, 1) 0%,
+      rgba(8, 6, 12, .94) 30%,
+      rgba(8, 6, 12, .68) 58%,
+      rgba(8, 6, 12, .12) 100%
+    );
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    padding: 62px 22px 80px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-art {
+    inset: 0;
+  }
+
+  .hero-art img {
+    object-position: 65% center;
+  }
+
+  .hero-art::before {
+    background: linear-gradient(
+      90deg,
+      rgba(8, 6, 12, .98) 0%,
+      rgba(8, 6, 12, .88) 35%,
+      rgba(8, 6, 12, .55) 65%,
+      rgba(8, 6, 12, .20) 100%
+    );
+  }
+
+  .hero-art::after {
+    background:
+      radial-gradient(
+        ellipse at 90% 12%,
+        rgba(166, 108, 255, .25),
+        transparent 30%
+      ),
+      radial-gradient(
+        ellipse at 95% 90%,
+        rgba(166, 108, 255, .30),
+        transparent 32%
+      );
+    filter: blur(20px);
+  }
 }

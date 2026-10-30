@@ -934,31 +934,70 @@ img {
   height: auto;
 }
 
-/* Camada de neblina na frente da imagem */
-.hero-art::after {
+/* Neblina cinematográfica intensa */
+.hero-art {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-art img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+}
+
+/* Primeira camada: névoa violeta */
+.hero-art::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -25px;
   z-index: 2;
   pointer-events: none;
 
   background:
     radial-gradient(
-      ellipse at 15% 80%,
-      rgba(170, 110, 255, 0.35),
+      ellipse at 15% 90%,
+      rgba(145, 65, 255, 0.75),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 85% 85%,
+      rgba(190, 110, 255, 0.65),
       transparent 45%
     ),
     radial-gradient(
-      ellipse at 85% 65%,
-      rgba(125, 70, 220, 0.28),
-      transparent 50%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(100, 45, 170, 0.25),
-      transparent 65%
+      ellipse at 50% 100%,
+      rgba(105, 35, 210, 0.8),
+      transparent 55%
     );
 
-  filter: blur(12px);
+  filter: blur(28px);
+  mix-blend-mode: screen;
+}
+
+/* Segunda camada: fumaça luminosa */
+.hero-art::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  z-index: 3;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      125deg,
+      transparent 15%,
+      rgba(190, 145, 255, 0.28) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse at 35% 65%,
+      rgba(155, 95, 255, 0.4),
+      transparent 60%
+    );
+
+  filter: blur(20px);
   mix-blend-mode: screen;
 }

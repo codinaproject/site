@@ -132,3 +132,29 @@ mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", (
 window.addEventListener("load", () => {
   if (window.twttr && window.twttr.widgets) window.twttr.widgets.load(timelineContainer);
 });
+
+document.addEventListener("click", (event) => {
+  const openButton = event.target.closest("[data-profile-open]");
+  const closeButton = event.target.closest("[data-profile-close]");
+
+  if (openButton) {
+    const profileId = openButton.dataset.profileOpen;
+    const profile = document.getElementById(profileId);
+
+    if (profile) {
+      profile.hidden = false;
+      profile.setAttribute("aria-modal", "true");
+      profile.setAttribute("role", "dialog");
+    }
+  }
+
+  if (closeButton) {
+    const profile = closeButton.closest("[data-profile]");
+    if (profile) {
+      profile.hidden = true;
+      profile.removeAttribute("aria-modal");
+      profile.removeAttribute("role");
+    }
+  }
+});
+

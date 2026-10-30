@@ -886,15 +886,36 @@ img {
     transition-duration: .01ms !important;
   }
 }
-/* Aumentar a imagem principal da Codina */
+/* Imagem principal responsiva */
 .hero-art {
   width: 100%;
-  min-height: 500px;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  overflow: hidden;
 }
 
 .hero-art img {
+  display: block;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  .hero-art {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-art img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
 }

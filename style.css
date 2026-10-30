@@ -919,3 +919,46 @@ img {
     object-fit: cover;
   }
 }
+/* Efeito cinematográfico e neblina */
+.hero-art {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: transparent;
+}
+
+.hero-art img {
+  opacity: 0.82;
+  filter: brightness(0.82) saturate(0.9);
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 40%,
+    rgba(0,0,0,0.8) 65%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 40%,
+    rgba(0,0,0,0.8) 65%,
+    transparent 100%
+  );
+}
+
+.hero-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse at 50% 80%,
+      rgba(150, 70, 255, 0.22),
+      transparent 65%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(18, 10, 29, 0.45),
+      transparent 75%
+    );
+}

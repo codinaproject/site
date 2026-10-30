@@ -1,5 +1,22 @@
 const translations = {
-  pt: {
+  pt:
+    castTitle: "Conheça os personagens.",
+    castKicker: "ELENCO DA HISTÓRIA",
+    castDescription: "Conheça as pessoas que fazem parte deste universo.",
+    profileButton: "Ver perfil",
+    closeProfile: "Fechar",
+    profileFullName: "Nome completo",
+    profileAge: "Idade",
+    profileBirthday: "Aniversário",
+    profileGender: "Gênero",
+    profileBloodType: "Tipo sanguíneo",
+    profileHeight: "Altura",
+    profileRole: "Papel na história",
+    profilePersonality: "Personalidade",
+    profileLikes: "Gostos",
+    profileDislikes: "Desgostos",
+    profileDescription: "Sobre o personagem"
+ {
     brandSub: "SITE OFICIAL DA HISTÓRIA", navStory: "História", navCharacter: "Personagem", navWorld: "Universo", navNews: "Novidades", navX: "Publicações",
     heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS", heroSubtitle: "Uma garota. Muitos mundos. Histórias que não deveriam se encontrar.",
     heroDescription: "Em um universo paralelo, os limites entre sonho, realidade e outras dimensões são menos definidos do que parecem.",

@@ -1,136 +1,202 @@
+
 const translations = {
-  pt:
-  {
-    brandSub: "SITE OFICIAL DA HISTÓRIA", navStory: "História", navCharacter: "Personagem", navWorld: "Universo", navNews: "Novidades", navX: "Publicações",
-    heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS", heroSubtitle: "Uma garota. Muitos mundos. Histórias que não deveriam se encontrar.",
-    heroDescription: "Em um universo paralelo, os limites entre sonho, realidade e outras dimensões são menos definidos do que parecem.",
-    discover: "Conheça a história", meetCharacter: "Conheça a Codina", artPlaceholder: "ARTE PRINCIPAL DA CODINA", artPlaceholderSub: "ESPAÇO RESERVADO PARA A ILUSTRAÇÃO",
-    heroSideNote: "物語は、夢の向こうへ。", heroBottomLeft: "UMA HISTÓRIA ORIGINAL DE PERSONAGEM", scroll: "ROLE PARA EXPLORAR",
-    labelStory: "A HISTÓRIA", storyKicker: "O COMEÇO DE TUDO", storyTitle: "Toda história<br>abre uma <em>porta.</em>",
-    storyText: "Em um mundo paralelo inspirado nos anos 1980, o avanço tecnológico acelerado muda o rumo da vida cotidiana. Enquanto ameaças de outras dimensões se aproximam, Codina passa a atravessar outros mundos durante o sono — e portais podem trazer versões inesperadas dela mesma.",
-    exploreWorld: "Explore o universo", chapterLabel: "PRÓLOGO", chapterTitle: "O mundo do outro lado do sono",
-    labelCharacter: "PERSONAGEM PRINCIPAL", profileKicker: "PERFIL", characterQuote: "“Mesmo quando tudo parece um sonho, a história continua.”",
-    characterDescription: "Calma, gentil e um pouco tímida, Codina observa o mundo com curiosidade. Suas jornadas conectam realidades diferentes e revelam que, às vezes, o impossível está apenas a uma porta de distância.",
-    characterArtPlaceholder: "ILUSTRAÇÃO DA PERSONAGEM<br>ADICIONAR POSTERIORMENTE", characterImageCaption: "PERSONAGEM ORIGINAL",
-    profileAge: "Idade", ageValue: "22 anos", profileBirthday: "Aniversário", profileRole: "Papel", roleValue: "Protagonista", characterMore: "Descobrir mais",
-    labelWorld: "O UNIVERSO", worldKicker: "REALIDADES CONECTADAS", worldTitle: "Nem todo caminho<br>leva ao mesmo <em>mundo.</em>",
-    worldLead: "Portais, sonhos e encontros improváveis fazem parte de um universo onde cada passagem pode mudar tudo.",
-    worldCard1Label: "ORIGEM", worldCard1Title: "Um mundo paralelo", worldCard1Text: "Uma realidade com atmosfera dos anos 1980, transformada por avanços tecnológicos inesperados.",
-    worldCard2Label: "TRAVESSIA", worldCard2Title: "Além do sono", worldCard2Text: "Enquanto dorme, Codina viaja para outros mundos e atravessa fronteiras desconhecidas.",
-    worldCard3Label: "MISTÉRIO", worldCard3Title: "Portas inesperadas", worldCard3Text: "Portais podem trazer outras versões de Codina, ampliando os mistérios entre as dimensões.",
-    labelNews: "NOVIDADES", newsKicker: "DO UNIVERSO DE CODINA", newsTitle: "Últimas <em>atualizações.</em>", newsNote: "NOVAS HISTÓRIAS EM BREVE",
-    newsEmptyTitle: "Uma nova página está para começar.", newsEmptyText: "Este espaço será usado para anunciar capítulos, ilustrações e novidades da história.", comingSoon: "EM BREVE",
-    labelX: "REDES SOCIAIS", xKicker: "ACOMPANHE AS PUBLICAÇÕES", xTitle: "Codina no <em>X.</em>", xDescription: "Veja as publicações recentes da conta e acompanhe as novidades fora do site.",
-    openX: "Abrir @Codin_ai", timelineLabel: "PUBLICAÇÕES RECENTES", timelineFallback: "Publicações de @Codin_ai", timelineHelp: "Se as publicações não aparecerem, abra o perfil diretamente no X.",
-    footerText: "Uma história original. Um universo em expansão.", footerTop: "Voltar ao início ↑"
-   
-    castTitle: "Conheça os personagens.",
-    castKicker: "ELENCO DA HISTÓRIA",
-    castDescription: "Conheça as pessoas que fazem parte deste universo.",
+  pt: {
+    navHome: "Início",
+    navStory: "História",
+    navCharacters: "Personagens",
+    navWorld: "Universo",
+    navSocial: "Redes sociais",
+
+    heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS",
+    heroSubtitle: "Uma garota. Outros mundos. Uma história ainda em movimento.",
+    heroStoryButton: "Conheça a história",
+    heroCharactersButton: "Conheça os personagens",
+    heroCaption: "SITE OFICIAL DA PERSONAGEM",
+    scrollText: "DESLIZE PARA DESCOBRIR",
+
+    storyEyebrow: "INTRODUÇÃO",
+    storyTitle: "A História",
+    storyLead: "Uma jornada que ultrapassa os limites de um único mundo.",
+    storyText: "Durante o sono, Codina viaja por outros mundos e atravessa portais que conectam diferentes realidades. Em meio a encontros inesperados e ameaças de outras dimensões, sua jornada continua.",
+
+    charactersEyebrow: "O ELENCO DA HISTÓRIA",
+    charactersTitle: "Personagens",
+    charactersLead: "Conheça aqueles que fazem parte deste universo.",
+    charactersNote: "Novos personagens serão apresentados aqui.",
+
+    codinaRole: "Protagonista",
+    codinaDescription: "Uma garota que viaja por outros mundos enquanto dorme.",
     profileButton: "Ver perfil",
-    closeProfile: "Fechar",
+    profileEyebrow: "PERFIL DO PERSONAGEM",
     profileFullName: "Nome completo",
     profileAge: "Idade",
+    codinaAge: "22 anos",
     profileBirthday: "Aniversário",
+    codinaBirthday: "21 de agosto",
     profileGender: "Gênero",
+    codinaGender: "Feminino",
     profileBloodType: "Tipo sanguíneo",
     profileHeight: "Altura",
     profileRole: "Papel na história",
+    profileDescription: "Sobre a personagem",
+    codinaFullDescription: "Codina é uma garota gentil, observadora e um pouco tímida. Durante o sono, consegue viajar por outros mundos e atravessar portais entre diferentes realidades.",
     profilePersonality: "Personalidade",
+    codinaPersonality: "Calma, educada, gentil e observadora.",
     profileLikes: "Gostos",
+    codinaLikes: "Escrever, comer, conversar, jogar e tomar chá doce.",
     profileDislikes: "Desgostos",
-    profileDescription: "Sobre o personagem"
-  },
-  jp: {
-    brandSub: "公式ストーリーサイト", navStory: "物語", navCharacter: "キャラクター", navWorld: "世界観", navNews: "お知らせ", navX: "投稿",
-    heroEyebrow: "世界を越えて紡がれる物語", heroSubtitle: "ひとりの少女。いくつもの世界。交わるはずのなかった物語。",
-    heroDescription: "夢と現実、そして異なる次元。その境界は、見た目ほど確かなものではない。",
-    discover: "物語を読む", meetCharacter: "コディナについて", artPlaceholder: "コディナ メインビジュアル", artPlaceholderSub: "イラスト掲載予定スペース",
-    heroSideNote: "物語は、夢の向こうへ。", heroBottomLeft: "オリジナルキャラクターストーリー", scroll: "スクロールして探索",
-    labelStory: "物語", storyKicker: "すべての始まり", storyTitle: "物語は<br>ひとつの<em>扉</em>から。",
-    storyText: "1980年代を思わせる並行世界。急速な技術の発展が日常を変えていくなか、異次元からの脅威が近づいてくる。コディナは眠っている間に別の世界を旅するようになり、時にはポータルから、思いがけない別のコディナが現れる。",
-    exploreWorld: "世界観を見る", chapterLabel: "プロローグ", chapterTitle: "眠りの向こう側にある世界",
-    labelCharacter: "メインキャラクター", profileKicker: "プロフィール", characterQuote: "「すべてが夢のように見えても、物語は続いていく。」",
-    characterDescription: "穏やかで優しく、少し内気なコディナ。好奇心を胸に世界を見つめる彼女の旅は、異なる現実をつなぎ、ときに不可能と思えることが扉のすぐ向こうにあると教えてくれる。",
-    characterArtPlaceholder: "キャラクターイラスト<br>後日追加予定", characterImageCaption: "オリジナルキャラクター",
-    profileAge: "年齢", ageValue: "22歳", profileBirthday: "誕生日", profileRole: "役割", roleValue: "主人公", characterMore: "もっと知る",
-    labelWorld: "世界観", worldKicker: "つながる現実", worldTitle: "すべての道が<br>同じ<em>世界</em>へ続くとは限らない。",
-    worldLead: "ポータル、夢、そして予期せぬ出会い。一つの扉が、すべてを変えることもある。",
-    worldCard1Label: "起源", worldCard1Title: "並行世界", worldCard1Text: "1980年代を思わせる雰囲気の世界。予想外の技術革新によって、その姿が変わっていく。",
-    worldCard2Label: "旅路", worldCard2Title: "眠りの向こうへ", worldCard2Text: "眠っている間、コディナは別の世界を旅し、未知の境界を越えていく。",
-    worldCard3Label: "謎", worldCard3Title: "予期せぬ扉", worldCard3Text: "ポータルは別のコディナを連れてくることもあり、次元の謎はさらに深まる。",
-    labelNews: "お知らせ", newsKicker: "コディナの世界から", newsTitle: "最新の<em>お知らせ。</em>", newsNote: "新しい物語を近日公開",
-    newsEmptyTitle: "新しいページが、まもなく始まります。", newsEmptyText: "ここでは新しいエピソード、イラスト、物語に関するお知らせを掲載します。", comingSoon: "近日公開",
-    labelX: "ソーシャル", xKicker: "最新の投稿をチェック", xTitle: "Xで<em>コディナ</em>をフォロー。", xDescription: "アカウントの最新投稿をチェックして、サイト外の更新も確認できます。",
-    openX: "@Codin_ai を開く", timelineLabel: "最新の投稿", timelineFallback: "@Codin_ai の投稿", timelineHelp: "投稿が表示されない場合は、Xでプロフィールを直接ご覧ください。",
-    footerText: "オリジナルストーリー。広がり続ける世界。", footerTop: "トップへ戻る ↑"
+    codinaDislikes: "Chá sem açúcar e barulhos altos tarde da noite.",
 
-    castTitle: "キャラクター紹介",
-    castKicker: "登場人物",
-    castDescription: "この物語に登場するキャラクターたちを紹介します。",
+    worldEyebrow: "ALÉM DA REALIDADE",
+    worldTitle: "Universo",
+    worldLead: "Diferentes mundos, realidades e mistérios.",
+    worldText: "O universo de Codina conecta diferentes realidades e guarda histórias que ainda serão descobertas.",
+
+    socialEyebrow: "ACOMPANHE O PROJETO",
+    socialTitle: "Redes sociais",
+    socialLead: "Acompanhe as novidades e publicações da Codina.",
+    socialButton: "Acompanhar no X",
+
+    footerText: "Uma personagem original criada por Codin.",
+    menuOpen: "Abrir menu",
+    menuClose: "Fechar menu",
+    switchToJapanese: "Mudar para japonês",
+    switchToPortuguese: "Mudar para português",
+    closeProfile: "Fechar perfil"
+  },
+
+  jp: {
+    navHome: "ホーム",
+    navStory: "ストーリー",
+    navCharacters: "キャラクター",
+    navWorld: "世界観",
+    navSocial: "SNS",
+
+    heroEyebrow: "世界を越える物語",
+    heroSubtitle: "ひとりの少女。異なる世界。続いていく物語。",
+    heroStoryButton: "物語を読む",
+    heroCharactersButton: "キャラクター紹介",
+    heroCaption: "公式キャラクターサイト",
+    scrollText: "スクロールして発見",
+
+    storyEyebrow: "イントロダクション",
+    storyTitle: "ストーリー",
+    storyLead: "ひとつの世界を越えて続く旅。",
+    storyText: "眠っている間、コディナはさまざまな世界を旅し、異なる現実をつなぐポータルを通り抜けます。思いがけない出会いや異次元からの脅威の中で、彼女の旅は続いていきます。",
+
+    charactersEyebrow: "物語の登場人物",
+    charactersTitle: "キャラクター",
+    charactersLead: "この世界に登場するキャラクターたちを紹介します。",
+    charactersNote: "新しいキャラクターも順次紹介します。",
+
+    codinaRole: "主人公",
+    codinaDescription: "眠っている間に、さまざまな世界を旅する少女。",
     profileButton: "プロフィールを見る",
-    closeProfile: "閉じる",
+    profileEyebrow: "キャラクタープロフィール",
     profileFullName: "フルネーム",
     profileAge: "年齢",
+    codinaAge: "22歳",
     profileBirthday: "誕生日",
+    codinaBirthday: "8月21日",
     profileGender: "性別",
+    codinaGender: "女性",
     profileBloodType: "血液型",
     profileHeight: "身長",
     profileRole: "物語での役割",
+    profileDescription: "キャラクター紹介",
+    codinaFullDescription: "コディナは優しく、観察力があり、少し恥ずかしがり屋の女の子です。眠っている間に別の世界を旅し、異なる現実をつなぐポータルを通り抜けることができます。",
     profilePersonality: "性格",
+    codinaPersonality: "穏やかで礼儀正しく、優しくて観察力があります。",
     profileLikes: "好きなもの",
+    codinaLikes: "書くこと、食べること、会話、ゲーム、甘いお茶。",
     profileDislikes: "苦手なもの",
-    profileDescription: "キャラクター紹介"
+    codinaDislikes: "砂糖の入っていないお茶と、夜遅くの大きな音。",
+
+    worldEyebrow: "現実の向こう側",
+    worldTitle: "世界観",
+    worldLead: "さまざまな世界、現実、そして謎。",
+    worldText: "コディナの世界は複数の現実をつなぎ、まだ知られていない物語を秘めています。",
+
+    socialEyebrow: "プロジェクトをフォロー",
+    socialTitle: "SNS",
+    socialLead: "コディナの最新情報や投稿をチェックしてください。",
+    socialButton: "Xでフォロー",
+
+    footerText: "Codinによって創作されたオリジナルキャラクター。",
+    menuOpen: "メニューを開く",
+    menuClose: "メニューを閉じる",
+    switchToJapanese: "日本語に切り替える",
+    switchToPortuguese: "ポルトガル語に切り替える",
+    closeProfile: "プロフィールを閉じる"
   }
 };
 
 let currentLanguage = "pt";
+
 const languageSwitch = document.getElementById("languageSwitch");
 const languageLabel = document.getElementById("languageLabel");
-const timelineContainer = document.getElementById("timelineContainer");
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
 
 function renderLanguage(lang) {
   currentLanguage = lang;
   document.documentElement.lang = lang === "jp" ? "ja" : "pt-BR";
+
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
-    const value = translations[lang][key];
-    if (value !== undefined) element.innerHTML = value;
+    const translatedText = translations[lang][key];
+
+    if (translatedText !== undefined) {
+      element.textContent = translatedText;
+    }
   });
+
   languageLabel.textContent = lang === "pt" ? "日本語" : "Português";
-  languageSwitch.setAttribute("aria-label", lang === "pt" ? "Mudar para japonês" : "ポルトガル語に切り替える");
-  document.querySelector(".twitter-timeline")?.setAttribute("data-lang", lang === "jp" ? "ja" : "pt");
-  // Rebuild the X timeline anchor so the official embed script can apply the selected locale.
-  const oldTimeline = timelineContainer.querySelector(".twitter-timeline");
-  if (oldTimeline) {
-    const newTimeline = document.createElement("a");
-    newTimeline.className = "twitter-timeline";
-    newTimeline.href = "https://twitter.com/Codin_ai?ref_src=twsrc%5Etfw";
-    newTimeline.dataset.height = "520";
-    newTimeline.dataset.theme = "dark";
-    newTimeline.dataset.chrome = "noheader nofooter noborders transparent";
-    newTimeline.dataset.lang = lang === "jp" ? "ja" : "pt";
-    newTimeline.textContent = lang === "jp" ? "@Codin_ai の投稿" : "Publicações de @Codin_ai";
-    oldTimeline.replaceWith(newTimeline);
-    if (window.twttr && window.twttr.widgets) window.twttr.widgets.load(timelineContainer);
-  }
+
+  languageSwitch.setAttribute(
+    "aria-label",
+    lang === "pt"
+      ? translations.pt.switchToJapanese
+      : translations.jp.switchToPortuguese
+  );
+
+  menuToggle.setAttribute(
+    "aria-label",
+    mainNav.classList.contains("open")
+      ? translations[lang].menuClose
+      : translations[lang].menuOpen
+  );
+
+  document.title = lang === "pt"
+    ? "Codina — Site Oficial"
+    : "コディナ — 公式サイト";
 }
-languageSwitch.addEventListener("click", () => renderLanguage(currentLanguage === "pt" ? "jp" : "pt"));
 
-const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
-menuToggle.addEventListener("click", () => {
-  const open = mainNav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
+languageSwitch.addEventListener("click", () => {
+  renderLanguage(currentLanguage === "pt" ? "jp" : "pt");
 });
-mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
-  mainNav.classList.remove("open");
-  menuToggle.setAttribute("aria-expanded", "false");
-}));
 
-// Re-run the embed loader when it becomes available.
-window.addEventListener("load", () => {
-  if (window.twttr && window.twttr.widgets) window.twttr.widgets.load(timelineContainer);
+menuToggle.addEventListener("click", () => {
+  const isOpen = mainNav.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen
+      ? translations[currentLanguage].menuClose
+      : translations[currentLanguage].menuOpen
+  );
+});
+
+mainNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mainNav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute(
+      "aria-label",
+      translations[currentLanguage].menuOpen
+    );
+  });
 });
 
 document.addEventListener("click", (event) => {
@@ -138,23 +204,63 @@ document.addEventListener("click", (event) => {
   const closeButton = event.target.closest("[data-profile-close]");
 
   if (openButton) {
-    const profileId = openButton.dataset.profileOpen;
-    const profile = document.getElementById(profileId);
+    const profile = document.getElementById(
+      openButton.dataset.profileOpen
+    );
 
     if (profile) {
       profile.hidden = false;
-      profile.setAttribute("aria-modal", "true");
-      profile.setAttribute("role", "dialog");
+      document.body.style.overflow = "hidden";
+
+      const close = profile.querySelector("[data-profile-close]");
+      if (close) close.focus();
     }
   }
 
   if (closeButton) {
     const profile = closeButton.closest("[data-profile]");
+
     if (profile) {
       profile.hidden = true;
-      profile.removeAttribute("aria-modal");
-      profile.removeAttribute("role");
+      document.body.style.overflow = "";
+
+      const opener = document.querySelector(
+        `[data-profile-open="${profile.id}"]`
+      );
+
+      if (opener) opener.focus();
+    }
+  }
+
+  if (event.target.classList.contains("profile-overlay")) {
+    event.target.hidden = true;
+    document.body.style.overflow = "";
+
+    const opener = document.querySelector(
+      `[data-profile-open="${event.target.id}"]`
+    );
+
+    if (opener) opener.focus();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const openProfile = document.querySelector(
+      ".profile-overlay:not([hidden])"
+    );
+
+    if (openProfile) {
+      openProfile.hidden = true;
+      document.body.style.overflow = "";
+
+      const opener = document.querySelector(
+        `[data-profile-open="${openProfile.id}"]`
+      );
+
+      if (opener) opener.focus();
     }
   }
 });
 
+renderLanguage("pt");

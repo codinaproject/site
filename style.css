@@ -169,3 +169,18 @@ h2 em { font-weight: 400; color: var(--purple); }
  .x-section-inner { grid-template-columns: 1fr; gap: 38px; }.x-heading .section-label { margin-bottom: 38px; }.x-timeline-wrap { padding: 12px; }
  .site-footer { padding: 30px 24px 22px; grid-template-columns: 1fr; gap: 12px; }.footer-links { flex-wrap: wrap; }.site-footer small { margin-top: 10px; }
 }
+.hero-character-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.character-profile-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

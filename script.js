@@ -23,6 +23,7 @@ const translations = {
     labelX: "REDES SOCIAIS", xKicker: "ACOMPANHE AS PUBLICAÇÕES", xTitle: "Codina no <em>X.</em>", xDescription: "Veja as publicações recentes da conta e acompanhe as novidades fora do site.",
     openX: "Abrir @Codin_ai", timelineLabel: "PUBLICAÇÕES RECENTES", timelineFallback: "Publicações de @Codin_ai", timelineHelp: "Se as publicações não aparecerem, abra o perfil diretamente no X.",
     footerText: "Uma história original. Um universo em expansão.", footerTop: "Voltar ao início ↑"
+   
     castTitle: "Conheça os personagens.",
     castKicker: "ELENCO DA HISTÓRIA",
     castDescription: "Conheça as pessoas que fazem parte deste universo.",
@@ -63,6 +64,23 @@ const translations = {
     labelX: "ソーシャル", xKicker: "最新の投稿をチェック", xTitle: "Xで<em>コディナ</em>をフォロー。", xDescription: "アカウントの最新投稿をチェックして、サイト外の更新も確認できます。",
     openX: "@Codin_ai を開く", timelineLabel: "最新の投稿", timelineFallback: "@Codin_ai の投稿", timelineHelp: "投稿が表示されない場合は、Xでプロフィールを直接ご覧ください。",
     footerText: "オリジナルストーリー。広がり続ける世界。", footerTop: "トップへ戻る ↑"
+
+    castTitle: "キャラクター紹介",
+    castKicker: "登場人物",
+    castDescription: "この物語に登場するキャラクターたちを紹介します。",
+    profileButton: "プロフィールを見る",
+    closeProfile: "閉じる",
+    profileFullName: "フルネーム",
+    profileAge: "年齢",
+    profileBirthday: "誕生日",
+    profileGender: "性別",
+    profileBloodType: "血液型",
+    profileHeight: "身長",
+    profileRole: "物語での役割",
+    profilePersonality: "性格",
+    profileLikes: "好きなもの",
+    profileDislikes: "苦手なもの",
+    profileDescription: "キャラクター紹介"
   }
 };
 

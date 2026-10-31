@@ -1356,20 +1356,27 @@ img {
   pointer-events: none;
 }
 
-/* Texto e botões continuam na camada superior */
+/* Texto e botões acima da imagem de fundo */
 .hero-content {
   position: relative;
   z-index: 5 !important;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Mantém o enquadramento no celular */
+/* Enquadramento da imagem de fundo no celular */
 @media (max-width: 600px) {
   .hero-art img {
     object-position: 65% center;
   }
 }
 
-/* LOGOTIPO PEQUENO DA BARRA SUPERIOR */
+/* Logo pequeno da barra superior */
 .logo img {
   display: block;
   width: 42px;
@@ -1378,10 +1385,10 @@ img {
   object-fit: contain;
 }
 
-/* LOGOTIPO GRANDE DO BANNER */
+/* Logo principal do banner */
 .hero-logo {
-  width: min(100%, 190px);
-  margin: 0 0 12px;
+  width: min(70%, 260px);
+  margin: 0 auto 20px;
 }
 
 .hero-logo img {
@@ -1391,13 +1398,30 @@ img {
   object-fit: contain;
 }
 
-.hero-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Textos centralizados */
+.hero .eyebrow,
+.hero .hero-subtitle,
+.hero .hero-caption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* AJUSTES PARA CELULAR */
+.hero .hero-subtitle {
+  max-width: 480px;
+}
+
+/* Botões centralizados abaixo do conteúdo */
+.hero .hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Ajustes para celular */
 @media (max-width: 600px) {
   .logo img {
     width: 38px;
@@ -1405,6 +1429,11 @@ img {
   }
 
   .hero-logo {
-    width: min(100%, 150px);
+    width: min(65%, 190px);
+  }
+
+  .hero .hero-actions {
+    width: 100%;
+    gap: 10px;
   }
 }

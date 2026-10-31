@@ -1313,3 +1313,58 @@ img {
   }
 }
 
+
+/* =====================================
+   CORREÇÃO FINAL — CAMADAS DO HERO
+   ===================================== */
+
+/* A arte continua como fundo de toda a seção */
+.hero-art {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  z-index: 0 !important;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* A imagem preenche o fundo */
+.hero-art img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: 75% center;
+}
+
+/* A energia fica na frente da imagem,
+   mas atrás das partículas */
+.hero-energy {
+  z-index: 4 !important;
+  pointer-events: none;
+}
+
+/* Partículas na frente da imagem e da névoa */
+.hero-particles {
+  z-index: 4 !important;
+  pointer-events: none;
+}
+
+/* Texto e botões continuam na camada superior */
+.hero-content {
+  position: relative;
+  z-index: 5 !important;
+}
+
+/* Mantém o enquadramento no celular */
+@media (max-width: 600px) {
+  .hero-art img {
+    object-position: 65% center;
+  }
+}

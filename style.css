@@ -1372,8 +1372,10 @@ img {
 /* LOGOTIPO PEQUENO DA BARRA SUPERIOR */
 .logo img {
   display: block;
-  width: 78px;
+  width: 42px;
   height: auto;
+  max-height: 36px;
+  object-fit: contain;
 }
 
 /* LOGOTIPO GRANDE DO BANNER */

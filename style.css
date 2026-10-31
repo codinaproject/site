@@ -1380,8 +1380,15 @@ img {
 
 /* LOGOTIPO GRANDE DO BANNER */
 .hero-logo {
-  width: min(100%, 360px);
-  margin: 0 0 16px;
+  width: min(100%, 190px);
+  margin: 0 0 12px;
+}
+
+.hero-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-logo img {

@@ -1400,10 +1400,11 @@ img {
 /* AJUSTES PARA CELULAR */
 @media (max-width: 600px) {
   .logo img {
-    width: 62px;
+    width: 38px;
+    max-height: 32px;
   }
 
   .hero-logo {
-    width: min(100%, 290px);
+    width: min(100%, 150px);
   }
 }

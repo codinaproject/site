@@ -1138,3 +1138,63 @@ img {
     animation: none !important;
   }
 }
+
+/* =====================================
+   CODINA — ENERGIA SOBRENATURAL
+   ===================================== */
+
+.hero-energy {
+  position: absolute;
+  z-index: 0;
+  top: 12%;
+  right: 4%;
+
+  width: min(52vw, 650px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse,
+    rgba(153, 75, 255, 0.22) 0%,
+    rgba(112, 48, 205, 0.12) 38%,
+    transparent 70%
+  );
+
+  filter: blur(32px);
+  opacity: 0.8;
+
+  animation: codina-energy-pulse 7s ease-in-out infinite;
+}
+
+@keyframes codina-energy-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.94);
+  }
+
+  50% {
+    opacity: 0.95;
+    transform: scale(1.06);
+  }
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .hero-energy {
+    top: 15%;
+    right: -25%;
+    width: 95vw;
+    opacity: 0.65;
+  }
+}
+
+/* Respeita a preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .hero-energy {
+    animation: none !important;
+  }
+}
+

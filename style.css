@@ -922,6 +922,7 @@ img {
   animation: none;
 }
 
+
 .hero-art img {
   position: absolute;
   inset: 0;
@@ -929,7 +930,7 @@ img {
   height: 100%;
   max-height: none;
   object-fit: cover;
-  object-position: right center;
+  object-position: 75% center;
   filter: none;
 }
 

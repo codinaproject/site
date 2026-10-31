@@ -1059,3 +1059,82 @@ img {
     filter: blur(20px);
   }
 }
+
+/* =====================================
+   CODINA — PARTÍCULAS CINEMATOGRÁFICAS
+   ===================================== */
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.7;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(220, 190, 255, 0.9) 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle,
+      rgba(166, 108, 255, 0.8) 1.5px,
+      transparent 2.5px
+    ),
+    radial-gradient(
+      circle,
+      rgba(255, 240, 255, 0.65) 1px,
+      transparent 2px
+    );
+
+  background-size:
+    97px 113px,
+    157px 181px,
+    223px 197px;
+
+  background-position:
+    0 0,
+    45px 70px,
+    110px 25px;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 35%,
+    #000
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 35%,
+    #000
+  );
+
+  animation: codina-particles 24s linear infinite;
+}
+
+@keyframes codina-particles {
+  from {
+    background-position:
+      0 0,
+      45px 70px,
+      110px 25px;
+  }
+
+  to {
+    background-position:
+      -50px -180px,
+      125px -120px,
+      30px -170px;
+  }
+}
+
+/* Respeita quem prefere movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .hero-particles {
+    animation: none !important;
+  }
+}

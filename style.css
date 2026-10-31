@@ -1368,3 +1368,33 @@ img {
     object-position: 65% center;
   }
 }
+
+/* LOGOTIPO PEQUENO DA BARRA SUPERIOR */
+.logo img {
+  display: block;
+  width: 78px;
+  height: auto;
+}
+
+/* LOGOTIPO GRANDE DO BANNER */
+.hero-logo {
+  width: min(100%, 360px);
+  margin: 0 0 16px;
+}
+
+.hero-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* AJUSTES PARA CELULAR */
+@media (max-width: 600px) {
+  .logo img {
+    width: 62px;
+  }
+
+  .hero-logo {
+    width: min(100%, 290px);
+  }
+}

@@ -264,3 +264,55 @@ document.addEventListener("keydown", (event) => {
 });
 
 renderLanguage("pt");
+
+/* =====================================
+   CODINA — ANIMAÇÕES AO ROLAR A PÁGINA
+   ===================================== */
+
+(() => {
+  const selectors = [
+    ".section-heading",
+    ".story-panel",
+    ".character-card",
+    ".world-panel",
+    ".social-link"
+  ];
+
+  const elements = document.querySelectorAll(
+    selectors.join(", ")
+  );
+
+  /* Se o navegador não suportar IntersectionObserver,
+     deixa os elementos visíveis normalmente. */
+  if (!("IntersectionObserver" in window)) {
+    elements.forEach((element) => {
+      element.classList.add("reveal", "is-visible");
+    });
+
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+
+          /* Para de observar o elemento depois
+             que ele aparece pela primeira vez. */
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -35px 0px"
+    }
+  );
+
+  elements.forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
+  });
+})();
+

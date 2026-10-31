@@ -1198,3 +1198,87 @@ img {
   }
 }
 
+/* =====================================
+   CODINA — INTERAÇÕES CINEMATOGRÁFICAS
+   ===================================== */
+
+/* Links do menu */
+.main-nav a {
+  position: relative;
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+/* Linha luminosa sob o link */
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  height: 2px;
+
+  background: var(--purple-bright);
+  box-shadow: 0 0 10px rgba(198, 160, 255, 0.55);
+
+  transition: right 0.25s ease;
+}
+
+/* Brilho ao passar o mouse */
+.main-nav a:hover {
+  color: var(--purple-bright);
+  text-shadow: 0 0 14px rgba(166, 108, 255, 0.3);
+}
+
+.main-nav a:hover::after {
+  right: 0;
+}
+
+/* Transição suave dos botões */
+.button {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Botão principal */
+.button-primary:hover {
+  box-shadow: 0 0 24px rgba(166, 108, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Botão secundário */
+.button-secondary:hover {
+  box-shadow: 0 0 20px rgba(166, 108, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Cartões de personagens */
+.character-card {
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.24),
+    0 0 22px rgba(166, 108, 255, 0.08);
+}
+
+/* Evita animações exageradas em dispositivos
+   configurados para movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .main-nav a,
+  .main-nav a::after,
+  .button,
+  .character-card {
+    transition: none !important;
+  }
+}
+

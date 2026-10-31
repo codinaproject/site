@@ -1282,3 +1282,34 @@ img {
   }
 }
 
+/* =====================================
+   CODINA — ANIMAÇÕES DE SCROLL
+   ===================================== */
+
+/* Estado inicial: elementos ligeiramente abaixo
+   da posição normal e transparentes */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Estado final: elemento visível na posição normal */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Acessibilidade: desativa o movimento
+   para quem prefere animações reduzidas */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+

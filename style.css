@@ -429,15 +429,18 @@ img {
 
 .character-image {
   position: relative;
-  aspect-ratio: 4 / 4.2;
+  width: 100%;
+  height: 420px;
   overflow: hidden;
   background: linear-gradient(145deg, #38234e, #17101f 72%);
 }
 
 .character-image img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform .45s ease;
 }
 

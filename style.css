@@ -1440,3 +1440,158 @@ img {
     gap: 10px;
   }
 }
+
+/* ========================================
+   PÁGINA DA EQUIPE
+======================================== */
+
+.team-page {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.team-hero {
+  padding: 100px 0 70px;
+  text-align: center;
+}
+
+.team-eyebrow {
+  margin-bottom: 12px;
+  color: #c5a0f4;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.team-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 800;
+}
+
+.team-hero > p:last-child {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: #c8bfd2;
+  line-height: 1.8;
+}
+
+.team-section {
+  padding: 55px 0;
+  scroll-margin-top: 100px;
+}
+
+.team-section-heading {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.team-section-heading h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.team-section-heading > p:last-child {
+  max-width: 650px;
+  margin: 12px auto 0;
+  color: #c8bfd2;
+  line-height: 1.8;
+}
+
+.team-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 30px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(197, 160, 244, 0.2);
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(76, 47, 99, 0.28),
+    rgba(24, 16, 34, 0.88)
+  );
+}
+
+.team-photo {
+  min-height: 300px;
+  border: 1px dashed rgba(197, 160, 244, 0.35);
+  border-radius: 12px;
+  background: rgba(16, 11, 24, 0.55);
+}
+
+.team-info {
+  align-self: center;
+  padding: 12px 0;
+}
+
+.team-role {
+  margin: 0 0 10px;
+  color: #c5a0f4;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.team-info h3 {
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+}
+
+.team-info > p:not(.team-role) {
+  color: #d0c7d8;
+  line-height: 1.9;
+}
+
+.team-info blockquote {
+  margin: 24px 0 0;
+  padding: 14px 18px;
+  border-left: 3px solid #a77be0;
+  color: #e0cafa;
+  background: rgba(167, 123, 224, 0.08);
+  line-height: 1.8;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.team-grid:empty,
+.thanks-list:empty {
+  display: none;
+}
+
+.thanks-list {
+  display: grid;
+  gap: 14px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .team-hero {
+    padding: 70px 0 45px;
+  }
+
+  .team-section {
+    padding: 38px 0;
+  }
+
+  .team-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .team-photo {
+    min-height: 260px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

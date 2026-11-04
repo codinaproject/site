@@ -6,6 +6,7 @@ const translations = {
     navCharacters: "Personagens",
     navWorld: "Universo",
     navSocial: "Redes sociais",
+    navTeam: "Equipe",
 
     heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS",
     heroSubtitle: "Uma garota. Outros mundos. Uma história ainda em movimento.",

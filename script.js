@@ -74,6 +74,7 @@ teamBio1: "Idealizador do projeto Codina, responsável por sua concepção criat
 teamBio2: "Sua visão é expandir o projeto para diferentes áreas criativas, incluindo webcomics, jogos, música e produtos próprios, construindo uma identidade que conecte essas diferentes iniciativas.",
 teamQuote: "Uma ideia é o início de tudo.",
 teamInfoFooter: "IDEIA · DIREÇÃO · CRIAÇÃO",
+teamCompanionCaption: "COMPANHEIRO",    
 teamCompanionRole: "Companheiro de Jornada",
 teamCompanionBio: "Uma presença especial na trajetória do criador, representando um vínculo de amizade e consideração pessoal.",
 teamCompanionFooter: "AMIZADE · COMPANHIA",    

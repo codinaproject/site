@@ -2285,6 +2285,7 @@ img {
   position: relative;
   overflow: visible;
   isolation: isolate;
+  color: white;
 }
 
 .synopsis-rgb::after {

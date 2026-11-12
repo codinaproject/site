@@ -12,7 +12,7 @@ heroReadCodina: "Ler CODINA",
 
     heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS",
     heroSubtitle: "Uma garota. Outros mundos. Uma história ainda em movimento.",
-    heroStoryButton: "Conheça a história",
+    heroSynopsisButton: "Sinopse",
     heroCharactersButton: "Conheça os personagens",
     heroCaption: "SITE OFICIAL DA PERSONAGEM",
     scrollText: "DESLIZE PARA DESCOBRIR",

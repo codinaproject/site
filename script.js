@@ -108,6 +108,11 @@ teamCopyright: "CODINA © 2023 por Codin aí.",
     readSubtitle: "Webcomic Oficial",
     readDescription: "Entre em um universo de histórias, personagens e acontecimentos que vão além da imaginação.",
     readExplore: "Explorar capítulos",
+    readChaptersEyebrow: "01 / LEITURA",
+readChaptersTitle: "Capítulos",
+readChaptersDescription: "Acompanhe as histórias de CODINA. Novos capítulos serão apresentados aqui.",
+readComingSoon: "Em breve",
+readComingSoonDescription: "Os capítulos da webcomic serão disponibilizados aqui.",
   },
 
   jp: {

@@ -7,6 +7,8 @@ const translations = {
     navWorld: "Universo",
     navSocial: "Redes sociais",
     navTeam: "Equipe",
+    navReadCodina: "Ler CODINA",
+heroReadCodina: "Ler CODINA",
 
     heroEyebrow: "UMA HISTÓRIA ENTRE MUNDOS",
     heroSubtitle: "Uma garota. Outros mundos. Uma história ainda em movimento.",

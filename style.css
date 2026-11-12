@@ -2320,3 +2320,8 @@ img {
     background-position: 22px 22px;
   }
 }
+
+/* Movimento mais lento — Conheça os personagens */
+.characters-rgb::after {
+  animation-duration: 2.5s;
+}

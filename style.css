@@ -2326,3 +2326,8 @@ img {
 .characters-rgb::after {
   animation-duration: 2.5s;
 }
+
+/* Efeito flutuante — botão Sinopse */
+.synopsis-rgb:not(.characters-rgb) {
+  animation: codinaReadFloat 3s ease-in-out infinite;
+}

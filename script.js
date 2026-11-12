@@ -118,6 +118,7 @@ readComingSoonDescription: "Os capítulos da webcomic serão disponibilizados aq
 
   jp: {
     navHome: "ホーム",
+    navSynopsis: "あらすじ",
     navStory: "ストーリー",
     navCharacters: "キャラクター",
     navWorld: "世界観",

@@ -213,7 +213,11 @@ teamCopyright: "CODINA © 2023 by Codin aí.",
     menuClose: "メニューを閉じる",
     switchToJapanese: "日本語に切り替える",
     switchToPortuguese: "ポルトガル語に切り替える",
-    closeProfile: "プロフィールを閉じる"
+    closeProfile: "プロフィールを閉じる",
+    readTitle: "読む",
+readSubtitle: "公式ウェブコミック",
+readDescription: "物語やキャラクター、想像を超える出来事が広がる世界へ。",
+readExplore: "エピソードを見る",
   }
 };
 

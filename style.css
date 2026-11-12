@@ -2212,3 +2212,58 @@ img {
   }
 }
 
+/* SINOPSE */
+
+.synopsis-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.synopsis-details summary {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 14px 20px;
+  border: 1px solid rgba(198, 160, 255, 0.35);
+  border-radius: 12px;
+  background: rgba(166, 108, 255, 0.12);
+  color: #c6a0ff;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.synopsis-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.synopsis-details summary::after {
+  content: "+";
+  font-size: 22px;
+}
+
+.synopsis-details[open] summary::after {
+  content: "−";
+}
+
+.synopsis-details summary:hover {
+  background: rgba(166, 108, 255, 0.22);
+  border-color: #a66cff;
+}
+
+.synopsis-short,
+.synopsis-long {
+  order: 1;
+}
+
+.synopsis-details:not([open]) .synopsis-long {
+  display: none;
+}
+
+.synopsis-details[open] .synopsis-short {
+  display: none;
+}

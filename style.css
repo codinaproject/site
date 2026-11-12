@@ -2279,3 +2279,44 @@ img {
   display: none;
 }
 
+/* Contorno RGB quadriculado — botão Sinopse */
+
+.synopsis-rgb {
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.synopsis-rgb::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    /* Quadradinhos roxos */
+    radial-gradient(circle, #a66cff 0 2px, transparent 2.5px) 0 0 / 9px 9px,
+    /* Quadradinhos azuis */
+    radial-gradient(circle, #55d9ff 0 2px, transparent 2.5px) 3px 3px / 9px 9px,
+    /* Quadradinhos rosas */
+    radial-gradient(circle, #ff65d8 0 2px, transparent 2.5px) 6px 6px / 9px 9px;
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  padding: 4px;
+  animation: synopsis-rgb-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes synopsis-rgb-glow {
+  from {
+    filter: brightness(0.9) drop-shadow(0 0 2px #a66cff);
+  }
+  to {
+    filter: brightness(1.4) drop-shadow(0 0 5px #55d9ff);
+  }
+}

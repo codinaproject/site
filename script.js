@@ -2,7 +2,7 @@
 const translations = {
   pt: {
     navHome: "Início",
-    navStory: "História",
+    navSynopsis: "Sinopse",
     navCharacters: "Personagens",
     navWorld: "Universo",
     navSocial: "Redes sociais",

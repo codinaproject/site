@@ -117,7 +117,7 @@ teamCopyright: "CODINA © 2023 por Codin aí.",
 
     heroEyebrow: "世界を越える物語",
     heroSubtitle: "ひとりの少女。異なる世界。続いていく物語。",
-    heroStoryButton: "物語を読む",
+    heroSynopsisButton: "あらすじ",
     heroCharactersButton: "キャラクター紹介",
     heroCaption: "公式キャラクターサイト",
     scrollText: "スクロールして発見",

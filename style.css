@@ -2135,3 +2135,80 @@ img {
 }
 
 
+/* BOTÃO LER CODINA */
+.hero-read-codina {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 34px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #7138b8;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-shadow: 0 0 8px rgba(166, 108, 255, 0.45);
+
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(90deg, #a66cff, #79dfff, #ff8bdc, #a66cff) border-box;
+  background-size: 100% 100%, 300% 100%;
+
+  box-shadow: 0 0 12px rgba(166, 108, 255, 0.25);
+  animation:
+    codinaReadFloat 3s ease-in-out infinite,
+    codinaReadRGB 5s linear infinite;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-read-codina:hover {
+  box-shadow: 0 0 18px rgba(166, 108, 255, 0.45);
+}
+
+.hero-read-codina:active {
+  background: #8d55d6;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  border: 2px solid #8d55d6;
+  box-shadow: 0 0 18px rgba(166, 108, 255, 0.65);
+  animation: none;
+  transform: scale(0.97);
+}
+
+@keyframes codinaReadFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes codinaReadRGB {
+  0% {
+    background-position: 0 0, 0% 50%;
+  }
+  100% {
+    background-position: 0 0, 300% 50%;
+  }
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .hero-read-codina {
+    font-size: 1rem;
+    padding: 12px 28px;
+  }
+}
+

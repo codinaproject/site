@@ -223,6 +223,11 @@ teamCopyright: "CODINA © 2023 by Codin aí.",
 readSubtitle: "公式ウェブコミック",
 readDescription: "物語やキャラクター、想像を超える出来事が広がる世界へ。",
 readExplore: "エピソードを見る",
+readChaptersEyebrow: "01 / 読書",
+readChaptersTitle: "エピソード",
+readChaptersDescription: "CODINAの物語をお楽しみください。新しいエピソードはここに公開されます。",
+readComingSoon: "近日公開",
+readComingSoonDescription: "ウェブコミックのエピソードはここで公開されます。",
   }
 };
 

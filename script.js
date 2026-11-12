@@ -104,6 +104,10 @@ teamCopyright: "CODINA © 2023 por Codin aí.",
     switchToJapanese: "Mudar para japonês",
     switchToPortuguese: "Mudar para português",
     closeProfile: "Fechar perfil"
+    readTitle: "Ler",
+    readSubtitle: "Webcomic Oficial",
+    readDescription: "Entre em um universo de histórias, personagens e acontecimentos que vão além da imaginação.",
+    readExplore: "Explorar capítulos",
   },
 
   jp: {

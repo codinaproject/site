@@ -107,6 +107,8 @@ teamCopyright: "CODINA © 2023 por Codin aí.",
     navWorld: "世界観",
     navSocial: "SNS",
     navTeam: "チーム",
+        navReadCodina: "CODINAを読む",
+    heroReadCodina: "CODINAを読む",
 
     heroEyebrow: "世界を越える物語",
     heroSubtitle: "ひとりの少女。異なる世界。続いていく物語。",

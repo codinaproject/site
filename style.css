@@ -2260,6 +2260,17 @@ img {
   order: 1;
 }
 
+.synopsis-button-open {
+  display: none;
+}
+
+.synopsis-details[open] .synopsis-button-open {
+  display: inline;
+}
+
+.synopsis-details[open] summary [data-i18n="synopsisExpand"] {
+  display: none;
+}
 .synopsis-details:not([open]) .synopsis-long {
   display: none;
 }

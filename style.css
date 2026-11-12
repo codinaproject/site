@@ -2264,6 +2264,6 @@ img {
   display: none;
 }
 
-.synopsis-details[open] .synopsis-short {
+.synopsis-panel:has(.synopsis-details[open]) .synopsis-short {
   display: none;
 }

@@ -2407,26 +2407,29 @@ img {
 }
 
 
-/* Brilho da logo principal CODINA */
+/* BRILHO ANIMADO — LOGO PRINCIPAL CODINA */
 
 .hero-logo img {
   filter:
-    drop-shadow(0 0 5px rgba(166, 108, 255, 0.55))
-    drop-shadow(0 0 14px rgba(166, 108, 255, 0.4));
+    drop-shadow(0 0 7px rgba(198, 160, 255, 0.85))
+    drop-shadow(0 0 18px rgba(166, 108, 255, 0.7))
+    drop-shadow(0 0 35px rgba(166, 108, 255, 0.4));
 
-  animation: codinaHeroGlow 3s ease-in-out infinite alternate;
+  animation: codinaHeroGlow 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes codinaHeroGlow {
   from {
     filter:
-      drop-shadow(0 0 4px rgba(166, 108, 255, 0.35))
-      drop-shadow(0 0 9px rgba(166, 108, 255, 0.2));
+      drop-shadow(0 0 5px rgba(198, 160, 255, 0.55))
+      drop-shadow(0 0 12px rgba(166, 108, 255, 0.4))
+      drop-shadow(0 0 22px rgba(166, 108, 255, 0.2));
   }
 
   to {
     filter:
-      drop-shadow(0 0 9px rgba(190, 145, 255, 0.85))
-      drop-shadow(0 0 22px rgba(166, 108, 255, 0.65));
+      drop-shadow(0 0 10px rgba(220, 190, 255, 1))
+      drop-shadow(0 0 25px rgba(166, 108, 255, 0.85))
+      drop-shadow(0 0 45px rgba(166, 108, 255, 0.55));
   }
 }

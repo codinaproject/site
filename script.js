@@ -39,7 +39,7 @@ synopsisLong4: "Codina é uma garota comum, com uma rotina comum. Diferentemente
     profileEyebrow: "PERFIL DO PERSONAGEM",
     profileFullName: "Nome completo",
     profileAge: "Idade",
-    codinaAge: "22 anos",
+    codinaAge: "14, 18 e 22 anos (ao longo da história)",
     profileBirthday: "Aniversário",
     codinaBirthday: "21 de agosto",
     profileGender: "Gênero",

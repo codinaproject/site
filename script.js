@@ -156,7 +156,7 @@ synopsisLong4: "コディナはごく普通の少女で、平凡な日常を送�
     profileEyebrow: "キャラクタープロフィール",
     profileFullName: "フルネーム",
     profileAge: "年齢",
-    codinaAge: "22歳",
+    codinaAge: "14歳、18歳、22歳（物語の中で）",
     profileBirthday: "誕生日",
     codinaBirthday: "8月21日",
     profileGender: "性別",

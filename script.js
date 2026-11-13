@@ -513,4 +513,33 @@ if (siteMusic && musicToggle && musicIcon) {
   siteMusic.play().catch(() => {
     updateMusicButton(false);
   });
+
+  function startMusicOnFirstInteraction() {
+    if (siteMusic.paused) {
+      siteMusic.play().catch(error => {
+        console.log("Aguardando interação para iniciar a música.");
+      });
+    }
+
+    document.removeEventListener(
+      "click",
+      startMusicOnFirstInteraction
+    );
+
+    document.removeEventListener(
+      "touchstart",
+      startMusicOnFirstInteraction
+    );
+  }
+
+  document.addEventListener(
+    "click",
+    startMusicOnFirstInteraction
+  );
+
+  document.addEventListener(
+    "touchstart",
+    startMusicOnFirstInteraction
+  );
+  
 }

@@ -174,6 +174,8 @@ synopsisLong4: "コディナはごく普通の少女で、平凡な日常を送�
     codinaLikes: "書くこと、食べること、会話、ゲーム、甘いお茶。",
     profileDislikes: "苦手なもの",
     codinaDislikes: "砂糖の入っていないお茶と、夜遅くの大きな音。",
+    codinaHobbies: "本を読むこと、テレビを見ること、おいしいものを食べること、そして放課後にFlowerのお店を手伝うこと。",
+codinaConcerns: "お兄ちゃんを見つけなきゃ。今どこにいるんだろう？",
 
     worldEyebrow: "現実の向こう側",
     worldTitle: "世界観",

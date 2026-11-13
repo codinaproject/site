@@ -464,3 +464,53 @@ renderLanguage("pt");
   });
 })();
 
+
+/* ================================
+   CODINA BGM — MUSIC PLAYER
+================================ */
+
+const siteMusic = document.getElementById("siteMusic");
+const musicToggle = document.getElementById("musicToggle");
+const musicIcon = document.getElementById("musicIcon");
+
+if (siteMusic && musicToggle && musicIcon) {
+
+  function updateMusicButton(playing) {
+    musicIcon.textContent = playing ? "Ⅱ" : "▶";
+
+    musicToggle.setAttribute(
+      "aria-label",
+      playing ? "Pausar música" : "Reproduzir música"
+    );
+
+    musicToggle.setAttribute(
+      "aria-pressed",
+      playing ? "true" : "false"
+    );
+  }
+
+  musicToggle.addEventListener("click", async () => {
+    if (siteMusic.paused) {
+      try {
+        await siteMusic.play();
+      } catch (error) {
+        console.error("Não foi possível reproduzir a música:", error);
+      }
+    } else {
+      siteMusic.pause();
+    }
+  });
+
+  siteMusic.addEventListener("play", () => {
+    updateMusicButton(true);
+  });
+
+  siteMusic.addEventListener("pause", () => {
+    updateMusicButton(false);
+  });
+
+  // Tenta iniciar a música automaticamente
+  siteMusic.play().catch(() => {
+    updateMusicButton(false);
+  });
+}

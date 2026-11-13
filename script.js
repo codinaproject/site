@@ -57,6 +57,8 @@ synopsisLong4: "Codina é uma garota comum, com uma rotina comum. Diferentemente
     codinaDislikes: "Chá sem açúcar e barulhos altos tarde da noite.",
     codinaHobbies: "Ler livros, assistir TV, comer coisas gostosas e ajudar Flower na loja dela após a escola.",
 codinaConcerns: "Preciso encontrar o meu irmão, onde será que ele está?",
+    codinaHobbiesTitle: "Hobbies",
+codinaConcernsTitle: "Preocupações recentes",
 
     worldEyebrow: "ALÉM DA REALIDADE",
     worldTitle: "Universo",

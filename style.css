@@ -2405,3 +2405,28 @@ img {
     letter-spacing: 0.2px;
   }
 }
+
+
+/* Brilho da logo principal CODINA */
+
+.hero-logo img {
+  filter:
+    drop-shadow(0 0 5px rgba(166, 108, 255, 0.55))
+    drop-shadow(0 0 14px rgba(166, 108, 255, 0.4));
+
+  animation: codinaHeroGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes codinaHeroGlow {
+  from {
+    filter:
+      drop-shadow(0 0 4px rgba(166, 108, 255, 0.35))
+      drop-shadow(0 0 9px rgba(166, 108, 255, 0.2));
+  }
+
+  to {
+    filter:
+      drop-shadow(0 0 9px rgba(190, 145, 255, 0.85))
+      drop-shadow(0 0 22px rgba(166, 108, 255, 0.65));
+  }
+}

@@ -543,3 +543,15 @@ if (siteMusic && musicToggle && musicIcon) {
   );
   
 }
+
+// Tela de abertura CODINA
+
+document.addEventListener("DOMContentLoaded", () => {
+  const intro = document.getElementById("codinaIntro");
+
+  if (!intro) return;
+
+  setTimeout(() => {
+    intro.classList.add("is-hidden");
+  }, 3500);
+});

@@ -2433,3 +2433,76 @@ img {
       drop-shadow(0 0 45px rgba(166, 108, 255, 0.55));
   }
 }
+
+/* TELA DE ABERTURA CODINA */
+
+.codina-intro {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 99999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #080510;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.codina-intro-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.codina-intro-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.codina-intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 3, 18, 0.35);
+}
+
+.codina-intro-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.codina-intro-logo {
+  width: min(65vw, 340px);
+  height: auto;
+  filter:
+    drop-shadow(0 0 12px #a66cff)
+    drop-shadow(0 0 28px #a66cff);
+  animation: codinaLogoGlow 2s ease-in-out infinite alternate;
+}
+
+.codina-intro.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes codinaLogoGlow {
+  from {
+    filter: drop-shadow(0 0 10px #a66cff)
+            drop-shadow(0 0 20px #a66cff);
+  }
+  to {
+    filter: drop-shadow(0 0 20px #c6a0ff)
+            drop-shadow(0 0 40px #a66cff);
+  }
+}

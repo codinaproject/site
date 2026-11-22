@@ -2498,6 +2498,30 @@ transition:
   pointer-events: none;
 }
 
+.codina-intro.is-hidden .codina-intro-background {
+  transform: scale(1.08);
+  filter: blur(8px);
+}
+
+.codina-intro-background {
+  transition:
+    transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 1.8s ease;
+}
+
+.codina-intro.is-hidden .codina-intro-logo {
+  transform: scale(1.15);
+  opacity: 0;
+  filter: blur(12px);
+}
+
+.codina-intro-logo {
+  transition:
+    transform 1.2s ease,
+    opacity 1.2s ease,
+    filter 1.2s ease;
+}
+
 @keyframes codinaLogoGlow {
   from {
     filter: drop-shadow(0 0 10px #a66cff)

@@ -546,12 +546,10 @@ if (siteMusic && musicToggle && musicIcon) {
 
 // Tela de abertura CODINA
 
-document.addEventListener("DOMContentLoaded", () => {
-  const intro = document.getElementById("codinaIntro");
+const intro = document.getElementById("codinaIntro");
 
-  if (!intro) return;
-
+if (intro) {
   setTimeout(() => {
     intro.classList.add("is-hidden");
   }, 3500);
-});
+}
